@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"banco-digital/clientes"
-	"banco-digital/contas"
+	"banco-digital-go/clientes"
+	"banco-digital-go/contas"
 )
 
 func main() {
-	clienteYuri := clientes.ClientePessoaFisica{"Yuri Pires", "04940108007", "Programador", "Rua 23"}
+	clienteYuri := clientes.ClientePessoaFisica{"Yuri Pires", "04940108045555", "Programador", "Rua 23"}
 
 	contaDoYuri := contas.ContaCorrente{
 		Titular:       clienteYuri,

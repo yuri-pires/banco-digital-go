@@ -1,6 +1,6 @@
 package contas
 
-import "banco-digital/clientes"
+import "banco-digital-go/clientes"
 
 type ContaPoupanca struct {
 	Titular       clientes.ClientePessoaFisica
