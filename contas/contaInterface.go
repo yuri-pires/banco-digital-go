@@ -15,6 +15,10 @@ func PagarBoleto(conta ContaInterface, valorBoleto float64) (bool, string) {
 // RealizarSaque tenta realizar um saque em uma conta que implementa a interface ContaInterface.
 // A função verifica se a conta fornecida implementa a interface e, em caso afirmativo,
 // chama o método Sacar da conta.
+//
+// Essa abordagem não é muito útil no mundo real, assim como a de RealizarDepósito pois seguindo
+// uma lógica real, faz sentido as duas terem suas próprias implementações desses metódos, porém
+//  é útil para estudos da linguagem, pode te dar ideias de como implementar Interfaces
 func RealizarSaque(conta ContaInterface, valorSaque float64) (bool, string) {
 	status, mensagem := conta.Sacar(valorSaque)
 	return status, mensagem
